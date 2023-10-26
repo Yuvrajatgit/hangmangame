@@ -1,0 +1,161 @@
+.bottom {
+    height: 10px;
+    width: 250px;
+    background: black;
+}
+
+.middle {
+    background: black;
+    height: 400px;
+    width: 10px;
+    margin-left: 120px;
+}
+
+.top {
+    width: 200px;
+    background: black;
+    height: 10px;
+    margin-left: 120px;
+}
+
+.side {
+    width: 10px;
+    height: 50px;
+    background: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.head {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 10px solid black;
+    position: absolute;
+    top: 50px;
+    right: -30px
+}
+
+.body {
+    width: 10px;
+    height: 100px;
+    background: black;
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+
+.rightArm {
+    width: 100px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 150px;
+    right: -100px;
+    transform-origin: left bottom;
+    rotate: -30deg
+}
+
+.leftArm {
+    width: 100px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 150px;
+    right: 10px;
+    transform-origin: right bottom;
+    rotate: 30deg
+}
+
+.rightLeg {
+        width: 100px;
+        height: 10px;
+        background: black;
+        position: absolute;
+        top: 210px;
+        right: -90px;
+        transform-origin: left bottom;
+        rotate: 60deg;
+}
+
+.leftLeg {
+    width: 100px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 210px;
+    right: 0;
+    transform-origin: right bottom;
+    rotate: -60deg;
+}
+
+@media screen and (max-width: 600px) {
+    /* Reduce the sizes and adjust positions for smaller screens */
+    .bottom {
+      height: 5px;
+      width: 150px;
+    }
+  
+    .middle {
+      height: 200px;
+      width: 5px;
+      margin-left: 60px;
+    }
+  
+    .top {
+      width: 100px;
+      height: 5px;
+      margin-left: 60px;
+    }
+  
+    .side {
+      width: 5px;
+      height: 25px;
+    }
+  
+    .head {
+      width: 25px;
+      height: 25px;
+      border-width: 5px;
+      top: 25px;
+      right: -15px;
+    }
+  
+    .body {
+      width: 5px;
+      height: 50px;
+      top: 60px;
+    }
+  
+    .rightArm {
+      width: 50px;
+      height: 5px;
+      top: 75px;
+      right: -50px;
+    }
+  
+    .leftArm {
+      width: 50px;
+      height: 5px;
+      top: 75px;
+      right: 5px;
+    }
+  
+    .rightLeg {
+      width: 50px;
+      height: 5px;
+      top: 105px;
+      right: -45px;
+    }
+  
+    .leftLeg {
+      width: 50px;
+      height: 5px;
+      top: 105px;
+      right: 5px;
+    }
+  }
+
+
+

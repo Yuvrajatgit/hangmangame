@@ -1,0 +1,93 @@
+/* .main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    gap: 0.5rem;
+}
+
+
+.btn {
+    width: 80%;
+    background: none;
+    border: 3px solid black;
+    aspect-ratio: 1/1;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    padding: .5rem;
+}
+
+.btn.active {
+    background-color: hsl(200, 100%, 50% );
+    color: white;
+}
+
+.btn.inactive {
+    opacity: .3;
+}
+
+.btn:hover:not(:disabled),
+.btn:focus:not(:disabled) {
+    background-color: hsl(200, 100%, 75%);
+} */
+
+/* Common styles for all devices */
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Adjust the button width for smaller screens */
+    gap: 0.5rem;
+    max-width: 400px; /* Adjust the maximum width for smaller screens */
+    margin: 0 auto; /* Center the keyboard */
+  }
+  
+  .btn {
+    width: 100%;
+    background: none;
+    border: 2px solid black; /* Reduce border thickness for smaller screens */
+    aspect-ratio: 1/1;
+    font-size: 1.5rem; /* Adjust the font size for smaller screens */
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    padding: 0.5rem;
+  }
+  
+  .btn.active {
+    background-color: hsl(200, 100%, 50%);
+    color: white;
+  }
+  
+  .btn.inactive {
+    opacity: 0.3;
+  }
+  
+  .btn:hover:not(:disabled),
+  .btn:focus:not(:disabled) {
+    background-color: hsl(200, 100%, 75%);
+  }
+  
+  
+  @media (max-width: 575px) {
+    .main {
+      grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); /* Adjust the button width further for smaller screens */
+      max-width: 300px; /* Adjust the maximum width further for smaller screens */
+    }
+  
+    .btn {
+      font-size: 1rem; /* Further reduce font size for smaller screens if needed */
+    }
+  }
+  
+  /* Media Query for Medium Screens (Tablets) */
+  @media (min-width: 576px) and (max-width: 991px) {
+    .main {
+      grid-template-columns: repeat(auto-fit, minmax(40px, 1fr)); /* Adjust the button width further for smaller screens */
+      max-width: 300px; /* Adjust the maximum width further for smaller screens */
+    }
+  
+    .btn {
+      font-size: 1.2rem; /* Further reduce font size for smaller screens if needed */
+    }
+  }
